@@ -1,6 +1,7 @@
 <div class="content-wrapper">
 
   <section class="content-header">
+<<<<<<< HEAD
 
     <h1>
       
@@ -9,11 +10,21 @@
       <small>Panel de Control</small>
     
     </h1>
+=======
+>>>>>>> 1f4d978efd87e3e43e77f077658409d080308090
 
+    <h1>
+      Tablero
+      <small>Panel de Control</small>   
+    </h1>
     <ol class="breadcrumb">
       
+<<<<<<< HEAD
       <li><a href="inicio"><i class="fa fa-dashboard"></i> Inicio</a></li>
       
+=======
+      <li><a href="inicio"><i class="fa fa-dashboard"></i> Inicio</a></li>  
+>>>>>>> 1f4d978efd87e3e43e77f077658409d080308090
       <li class="active">Tablero</li>
 
     </ol>

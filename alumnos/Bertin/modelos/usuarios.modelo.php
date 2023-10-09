@@ -1,9 +1,22 @@
 <?php
-
 require_once "conexion.php";
-
 class ModeloUsuarios{
+    /*======================================
+    MOSTRAR USUARIOS
+    ====================================== */
+    static public function MdlMostrarUsuarios($tabla, $item, $valor){
+        if ($item != null) {    
+            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item");
+            $stmt -> bindParam(":".$item, $valor, PDO::PARAM_STR);  
+            $stmt -> execute();  
+            return $stmt -> fetch();
+        }else{
+            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla");
+            $stmt -> execute();
+            return $stmt -> fetchAll();
+        }
 
+<<<<<<< HEAD
     /*======================================
     MOSTRAR USUARIOS
     ====================================== */
@@ -29,8 +42,16 @@ class ModeloUsuarios{
             return $stmt -> fetchAll();
 
         }
+=======
+        
 
+        $stmt -> close();
+        $stmt = null;
+>>>>>>> 1f4d978efd87e3e43e77f077658409d080308090
 
+    }
+
+<<<<<<< HEAD
         $stmt -> close();
 
         $stmt = null;
@@ -55,6 +76,24 @@ class ModeloUsuarios{
             
              return "ok";
 
+=======
+    /*======================================
+    REGISTRO USUARIOS
+    ====================================== */
+
+    static public function mdlIngresarUsuario($tabla, $datos){
+        $stmt = Conexion::conectar()->prepare("INSERT INTO $tabla(nombre, usuario, password, perfil, foto) VALUES (:nombre, :usuario, :password, :perfil, :foto)");
+        $stmt->bindParam(":nombre", $datos["nombre"], PDO::PARAM_STR);
+        $stmt->bindParam(":usuario", $datos["usuario"], PDO::PARAM_STR);
+        $stmt->bindParam(":password", $datos["password"], PDO::PARAM_STR);
+        $stmt->bindParam(":perfil", $datos["perfil"], PDO::PARAM_STR);
+        $stmt->bindParam(":foto", $datos["foto"], PDO::PARAM_STR);
+
+        if ($stmt->execute()) {
+            
+             return "ok";
+
+>>>>>>> 1f4d978efd87e3e43e77f077658409d080308090
         }else{
 
             return "error";
@@ -66,6 +105,7 @@ class ModeloUsuarios{
         $stmt = null;
 
     }
+<<<<<<< HEAD
 
     /*======================================
     EDITAR USUARIOS
@@ -150,5 +190,7 @@ class ModeloUsuarios{
         
         
     }
+=======
+>>>>>>> 1f4d978efd87e3e43e77f077658409d080308090
 
 }

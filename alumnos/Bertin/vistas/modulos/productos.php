@@ -1,19 +1,17 @@
 <div class="content-wrapper">
-
   <section class="content-header">
 
     <h1>
-      
       Administrar productos
-    
     </h1>
 
-    <ol class="breadcrumb">
-      
-      <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
-      
+    <ol class="breadcrumb"> 
+      <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>    
       <li class="active">Administrar productos</li>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1f4d978efd87e3e43e77f077658409d080308090
     </ol>
 
   </section>

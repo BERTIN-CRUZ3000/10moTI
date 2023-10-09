@@ -1,17 +1,22 @@
 <div class="content-wrapper">
 
   <section class="content-header">
+<<<<<<< HEAD
 
     <h1>
       
       Administrar clientes
     
     </h1>
+=======
+>>>>>>> 1f4d978efd87e3e43e77f077658409d080308090
 
+    <h1>
+      Administrar clientes 
+    </h1>
     <ol class="breadcrumb">
       
       <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
-      
       <li class="active">Administrar clientes</li>
 
     </ol>
@@ -20,7 +25,6 @@
 
   <!-- Main content -->
   <section class="content">
-
     <!-- Default box -->
     <div class="box">
       <div class="box-header with-border">

@@ -1,23 +1,19 @@
 <div class="content-wrapper">
-
   <section class="content-header">
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1f4d978efd87e3e43e77f077658409d080308090
     <h1>
-      
-      Administrar ventas
-    
+      Administrar ventas  
     </h1>
-
     <ol class="breadcrumb">
-      
-      <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
-      
+     
+      <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>    
       <li class="active">Administrar ventas</li>
 
     </ol>
-
   </section>
-
   <!-- Main content -->
   <section class="content">
 
@@ -44,7 +40,6 @@
       <!-- /.box-footer-->
     </div>
     <!-- /.box -->
-
   </section>
   <!-- /.content -->
 </div>
